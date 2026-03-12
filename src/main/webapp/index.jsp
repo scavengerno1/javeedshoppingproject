@@ -91,7 +91,7 @@ h1{
         <header>
             <span style="font-size:64px;margin-right:10px;color:cyan">javeed-website-Site</span>
             <ul id="menu">
-                <li><a href="#home">Homiee</a></li>
+                <li><a href="#home">Homessz</a></li>
                 <li><a href="#about">About Us**!</a></li>
                 <li><a href="#product">Productsss</a></li>
                 <li><a href="#pricing">Pricing</a></li>
