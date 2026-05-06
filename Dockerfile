@@ -1,5 +1,5 @@
 # Verified stable tag for Tomcat 9 on JRE 11 Slim
-FROM tomcat:9.0.96-jre11-temurin-focal
+FROM tomcat:9.0.96-jre11-temurin
 
 # Clean up default apps
 RUN rm -rf /usr/local/tomcat/webapps/*
