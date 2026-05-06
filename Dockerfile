@@ -1,5 +1,5 @@
 # Use the updated, secure version as the single base image
-FROM tomcat:9.0.96-jdk11-openjdk-slim
+FROM tomcat:9.0.96-jre11-slim
 
 # Clean up default apps
 RUN rm -rf /usr/local/tomcat/webapps/*
