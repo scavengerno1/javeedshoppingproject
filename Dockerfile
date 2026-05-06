@@ -7,5 +7,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copy the .war file produced by your Maven stage
 COPY target/shopping-site-web-app.war /usr/local/tomcat/webapps/ROOT.war
 
+FROM tomcat:9.0.99-jdk11-openjdk-slim
+
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
