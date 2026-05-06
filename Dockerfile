@@ -1,13 +1,11 @@
-# Use a modern, supported version of Tomcat
-FROM tomcat:9.0-jdk11-openjdk-slim
+# Use the updated, secure version as the single base image
+FROM tomcat:9.0.96-jdk11-openjdk-slim
 
-# Remove default apps to keep it clean (Good QA practice)
+# Clean up default apps
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy the .war file produced by your Maven stage
+# Copy your specific war file to the ROOT of the server
 COPY target/shopping-site-web-app.war /usr/local/tomcat/webapps/ROOT.war
-
-FROM tomcat:9.0.99-jdk11-openjdk-slim
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
